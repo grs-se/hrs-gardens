@@ -1,0 +1,11 @@
+{
+	"name": "hrs-gardens",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"nodemon": "^2.0.19"
+	}
+}
