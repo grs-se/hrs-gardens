@@ -2,10 +2,18 @@
 	"name": "hrs-gardens",
 	"version": "1.0.0",
 	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.comp.css",
+		"concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+		"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -0 css/style.prefix.css"
+	},
 	"author": "",
 	"license": "ISC",
 	"description": "",
 	"devDependencies": {
-		"nodemon": "^2.0.19"
+		"autoprefixer": "^10.4.7",
+		"concat": "^1.0.3",
+		"nodemon": "^2.0.19",
+		"postcss-cli": "^10.0.0"
 	}
 }

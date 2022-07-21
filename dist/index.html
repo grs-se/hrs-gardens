@@ -9,12 +9,39 @@
 			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="css/icon-font.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="shortcut icon" href="image/png" href="img/favicon.png" />
 
 		<title>Henry Rice-Smith | Gardens</title>
 	</head>
 	<body>
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+			<label for="navi-toggle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
+
+			<div class="navigation__background">&nbsp;</div>
+
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">About Henry</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Portfolio</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Courses</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Book now</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<header class="header">
 			<div class="header__logo-box">
 				<img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -28,8 +55,527 @@
 					<span class="heading-primary--sub">Leeds, UK</span>
 				</h1>
 
-				<a href="#" class="btn btn--white btn--animated">View Portfolio</a>
+				<a href="#section-gardens" class="btn btn--white btn--animated"
+					>View Portfolio</a
+				>
 			</div>
 		</header>
-	</body>
+
+		<main>
+			<section class="section-about">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">
+						Exciting gardens for country bumpkins
+					</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-1-of-2">
+						<h3 class="heading-tertiary u-margin-bottom-small">
+							You're going to fall in love with nature
+						</h3>
+						<p class="paragraph">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+							eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+						</p>
+
+						<h3 class="heading-tertiary u-margin-bottom-small">
+							Live adventures like you never have before
+						</h3>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+							architecto temporibus doloribus.
+						</p>
+
+						<a href="#" class="btn-text">Learn more &rarr;</a>
+					</div>
+					<div class="col-1-of-2">
+						<div class="composition">
+							<img
+								srcset="
+									img/stock-img-4-small.jpg  300w,
+									img/stock-img-4.jpg       1000w
+								"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 1"
+								class="composition__photo composition__photo--p1"
+								src="img/stock-img-4.jpg"
+							/>
+							<img
+								srcset="
+									img/stock-img-3-small.jpg  300w,
+									img/stock-img-3.jpg       1000w
+								"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 1"
+								class="composition__photo composition__photo--p2"
+								src="img/stock-img-3.jpg"
+							/>
+							<img
+								srcset="
+									img/stock-img-1-small.jpg  300w,
+									img/stock-img-1.jpg       1000w
+								"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 1"
+								class="composition__photo composition__photo--p3"
+								src="img/stock-img-1.jpg"
+							/>
+							<!-- 
+							<img
+								src="img/stock-img-4.jpg"
+								alt=""
+								class="composition__photo composition__photo--p1"
+							/>-->
+							<!-- <img
+								src="img/stock-img-3.jpg"
+								alt=""
+								class="composition__photo composition__photo--p2"
+							/><img
+								src="img/stock-img-1.jpg"
+								alt=""
+								class="composition__photo composition__photo--p3"
+							/> -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-features">
+				<div class="row">
+					<div class="col-1-of-4">
+						<div class="feature-box">
+							<i class="feature-box__icon icon-basic-world"></i>
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								Explore the world
+							</h3>
+							<p class="feature-box__text">
+								ipsum dolor sit amet, consectetur adipis
+							</p>
+						</div>
+					</div>
+
+					<div class="col-1-of-4">
+						<div class="feature-box">
+							<i class="feature-box__icon icon-basic-compass"></i>
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								Meet nature
+							</h3>
+							<p class="feature-box__text">
+								ipsum dolor sit amet, consectetur adipis
+							</p>
+						</div>
+					</div>
+
+					<div class="col-1-of-4">
+						<div class="feature-box">
+							<i class="feature-box__icon icon-basic-map"></i>
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								Find your way
+							</h3>
+							<p class="feature-box__text">
+								ipsum dolor sit amet, consectetur adipis
+							</p>
+						</div>
+					</div>
+
+					<div class="col-1-of-4">
+						<div class="feature-box">
+							<i class="feature-box__icon icon-basic-heart"></i>
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								Live a healthier life
+							</h3>
+							<p class="feature-box__text">
+								ipsum dolor sit amet, consectetur adipis
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-gardens" id="section-gardens">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Most popular services</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<div class="card__picture card__picture--1">&nbsp;</div>
+								<h4 class="card__heading">
+									<span class="card__heading-span card__heading-span--1">
+										Horticulture</span
+									>
+								</h4>
+								<div class="card__details">
+									<ul>
+										<li>3 days a week</li>
+										<li>2 tutors</li>
+										<li>equipment provided</li>
+										<li>Sleeps in your garden</li>
+										<li>Pees in your Watering cans</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card__side card__side--back card__side--back-1">
+								<div class="card__cta">
+									<div class="card__price-box">
+										<p class="card__price-only">Only</p>
+										<p class="card__price-value">£299</p>
+									</div>
+									<a href="#popup" class="btn btn--white">Book now!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<div class="card__picture card__picture--2">&nbsp;</div>
+								<h4 class="card__heading">
+									<span class="card__heading-span card__heading-span--2">
+										Pruning and hedge-cutting</span
+									>
+								</h4>
+								<div class="card__details">
+									<ul>
+										<li>3 days a week</li>
+										<li>Up to 3 gardeners</li>
+										<li>2 wheelbarrows</li>
+										<li>Sleeps in your garden</li>
+										<li>Watering cans</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card__side card__side--back card__side--back-2">
+								<div class="card__cta">
+									<div class="card__price-box">
+										<p class="card__price-only">Only</p>
+										<p class="card__price-value">£299</p>
+									</div>
+									<a href="#popup" class="btn btn--white">Book now!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<div class="card__picture card__picture--3">&nbsp;</div>
+								<h4 class="card__heading">
+									<span class="card__heading-span card__heading-span--3">
+										Pruning and hedge-cutting</span
+									>
+								</h4>
+								<div class="card__details">
+									<ul>
+										<li>3 days a week</li>
+										<li>Up to 3 gardeners</li>
+										<li>2 wheelbarrows</li>
+										<li>Sleeps in your garden</li>
+										<li>Watering cans</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card__side card__side--back card__side--back-3">
+								<div class="card__cta">
+									<div class="card__price-box">
+										<p class="card__price-only">Only</p>
+										<p class="card__price-value">£399</p>
+									</div>
+									<a href="#popup" class="btn btn--white">Book now!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="u-center-text u-margin-top-huge">
+					<a href="#" class="btn btn--green">Discover all services</a>
+				</div>
+			</section>
+
+			<section class="section-stories">
+				<div class="bg-video">
+					<video class="bg-video__content" autoplay muted loop>
+						<source src="img/Red flower being watered.mp4" type="video/mp4" />
+						<source src="img/Red flower being watered.webm" type="video/webm" />
+						Your browser is not supported!
+					</video>
+				</div>
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">We make people genuinely happy</h2>
+				</div>
+
+				<div class="row">
+					<div class="story">
+						<figure class="story__shape">
+							<img
+								srcset="
+									img/mary-jane-duford-1PGXH4VCwu4-unsplash-small.jpg  300w,
+									img/mary-jane-duford-1PGXH4VCwu4-unsplash.jpg       1000w
+								"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								src="img/mary-jane-duford-1PGXH4VCwu4-unsplash.jpg"
+								class="story__img"
+								alt="Person gardening"
+							/>
+							<figcaption class="story__caption">Mary Chan</figcaption>
+						</figure>
+						<div class="story__text">
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								Henry is amazing!
+							</h3>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+								eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+								eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="story">
+						<figure class="story__shape">
+							<img
+								src="img/lauren-rader-8voN1UnfAno-unsplash.jpg"
+								class="story__img"
+								alt="Person gardening"
+							/>
+							<figcaption class="story__caption">Mary Chan</figcaption>
+						</figure>
+						<div class="story__text">
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								I had the best week ever planting with Henry!
+							</h3>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+								eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+								eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="story">
+						<figure class="story__shape">
+							<img
+								src="img/filipp-romanovski-eejet4GDlzc-unsplash.jpg"
+								class="story__img"
+								alt="Person gardening"
+							/>
+							<figcaption class="story__caption">Mary Chan</figcaption>
+						</figure>
+						<div class="story__text">
+							<h3 class="heading-tertiary u-margin-bottom-small">
+								I caught Henry weeing in my watering can!
+							</h3>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+								eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+								eveniet veniam deserunt? Sapiente eius et non. Minima provident.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="u-center-text u-margin-top-huge">
+					<a href="#" class="btn-text">Read all stories &rarr;</a>
+				</div>
+			</section>
+
+			<section class="section-book">
+				<div class="row">
+					<div class="book">
+						<div class="book__form">
+							<form action="#" class="form">
+								<div class="u-margin-bottom-medium">
+									<h2 class="heading-secondary u-margin-bottom-small">
+										Start booking now
+									</h2>
+								</div>
+								<div class="form__group">
+									<input
+										type="text"
+										class="form__input"
+										placeholder="Full Name"
+										id="name"
+										required
+									/>
+									<label for="name" class="form__label">Full name</label>
+								</div>
+
+								<div class="form__group">
+									<input
+										type="email"
+										class="form__input"
+										placeholder="Email address"
+										id="email"
+										required
+									/>
+									<label for="email" class="form__label">Email address</label>
+								</div>
+
+								<div class="form__group u-margin-bottom-medium">
+									<div class="form__radio-group">
+										<input
+											type="radio"
+											class="form__radio-input"
+											id="small"
+											name="size"
+										/>
+										<label for="small" class="form__radio-label"
+											><span class="form__radio-button"></span> Small gardening
+											group</label
+										>
+									</div>
+									<div class="form__radio-group">
+										<input
+											type="radio"
+											class="form__radio-input"
+											id="large"
+											name="size"
+										/>
+										<label for="large" class="form__radio-label"
+											><span class="form__radio-button"></span>Large gardening
+											group</label
+										>
+									</div>
+								</div>
+
+								<div class="form__group">
+									<button class="btn btn--green">Next step &rarr;</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__logo-box">
+				<picture class="footer__logo">
+					<source
+						srcset="
+							img/logo-green-small-1x.png 1x,
+							img/logo-green-small-2x.png 2x
+						"
+						media="(max-width: 37.5em)"
+					/>
+					<img
+						srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+						alt=""
+						class="Full logo"
+					/>
+				</picture>
+			</div>
+			<div class="row">
+				<div class="col-1-of-2">
+					<div class="footer__navigation">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Company</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Contact us</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Careers</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Privacy policy</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Terms</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-1-of-2">
+					<p class="footer__copyright">
+						Built my <a href="#" class="footer__link">Henry Rice-Smith</a>
+						<a href="#" class="footer__link"
+							>Gardening and Horticultre courses</a
+						>. Copyright &copy; by Henry Rice-Smith and Bro.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<div class="popup" id="popup">
+			<div class="popup__content">
+				<div class="popup__left">
+					<img
+						src="img/stock-img-4.jpg"
+						alt="Garden photo"
+						class="popup__img"
+					/>
+
+					<img
+						src="img/istockphoto-1135484042-612x612.jpg"
+						alt="Garden photo"
+						class="popup__img"
+					/>
+				</div>
+				<div class="popup__right">
+					<a href="#section-gardens" class="popup__close">&times;</a>
+					<h2 class="heading-secondary u-margin-bottom-small">
+						Start booking now
+					</h2>
+					<h3 class="heading-tertiary u-margin-bottom-small">
+						Important &ndash; Please read these terms before booking
+					</h3>
+					<p class="popup__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+						incidunt officiis aliquam error cupiditate, neque animi cum earum
+						fugit repellendus eaque inventore est totam dignissimos accusamus
+						tempore eos, corporis placeat. Incidunt officiis aliquam error
+						cupiditate, neque animi cum earum fugit repellendus eaque inventore
+						est totam dignissimos accusamus tempore eos, corporis placeat.
+					</p>
+					<a href="#" class="btn btn--green">Book now</a>
+				</div>
+			</div>
+		</div>
+		<!--
+		<section class="grid-tests">
+			<div class="row">
+				<div class="col-1-of-2">Col 1 of 2</div>
+				<div class="col-1-of-2">Col 1 of 2</div>
+			</div>
+			<div class="row">
+				<div class="col-1-of-3">Col 1 of 3</div>
+				<div class="col-1-of-3">Col 1 of 3</div>
+				<div class="col-1-of-3">Col 1 of 3</div>
+			</div>
+			<div class="row">
+				<div class="col-1-of-3">Col 1 of 3</div>
+				<div class="col-2-of-3">Col 2 of 3</div>
+			</div>
+			<div class="row">
+				<div class="col-1-of-4">Col 1 of 4</div>
+				<div class="col-1-of-4">Col 1 of 4</div>
+				<div class="col-1-of-4">Col 1 of 4</div>
+				<div class="col-1-of-4">Col 1 of 4</div>
+			</div>
+			<div class="row">
+				<div class="col-1-of-4">Col 1 of 4</div>
+				<div class="col-1-of-4">Col 1 of 4</div>
+				<div class="col-2-of-4">Col 2 of 4</div>
+			</div>
+			<div class="row">
+				<div class="col-1-of-4">Col 1 of 4</div>
+				<div class="col-3-of-4">Col 3 of 4</div>
+			</div>
+		</section>
+		--></body>
 </html>
