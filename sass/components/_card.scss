@@ -76,7 +76,7 @@
 					$color-secondary-light,
 					$color-secondary-dark
 				),
-				url(../img/crystal-jo-PKcTuA_CRAo-unsplash.jpg);
+				url(../imgs/crystal-jo-PKcTuA_CRAo-unsplash.jpg);
 		}
 
 		&--2 {
@@ -85,7 +85,7 @@
 					$color-primary-light,
 					$color-primary-dark
 				),
-				url(../img/stock-img-1.jpg);
+				url(../imgs/stock-img-1.jpg);
 		}
 
 		&--3 {
@@ -94,7 +94,7 @@
 					$color-tertiary-light,
 					$color-tertiary-dark
 				),
-				url(../img/istockphoto-1135484042-612x612.jpg);
+				url(../imgs/istockphoto-1135484042-612x612.jpg);
 		}
 	}
 
@@ -187,7 +187,7 @@
 	}
 }
 
-@include respond($tablet-portrait) {
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
 	.card {
 		height: auto;
 		border-radius: 3px;
